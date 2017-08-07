@@ -109,6 +109,7 @@ I used gnu parallel to run 4 samples simultaneously. Further, since some samples
 I created an exit status test. This ensures that samples with too few reads for rescaling can still be processed in the next step by copying the unrescaled .bam
 file into the next process. For more information on mapDamage see: https://ginolhac.github.io/mapDamage/
 **Final output at this stage is a  rescaled BAM file: `Sample.trimmed.merged.mapped.q30.bwa.sort.rmdup.uniq.rescaled.bam`**
+NOTE: Here there is an absolute path to the reference genome file, this must be changed if using another ubuntu machine.
 
 ----
 
