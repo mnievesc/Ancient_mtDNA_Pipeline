@@ -98,6 +98,7 @@ See the SAM format documentation for more information on each of these steps: ht
 I save counts at different stages of filtering using variables (variable = `unix command that outputs desired value`) and I use echo -e to print these to the 
 stats file for this step. Using `echo -e` we ensure that the shell understands we want elements in the file to be tab delimtied `\t`
 **Final output at this stage is a BAM file: `Sample.trimmed.merged.mapped.q30.bwa.sort.rmdup.uniq.bam`**
+NOTE:Shoutout Drs. Rosa Fregel and Maria C. Avila Arcos who helped me in developing this part of the script. 
 
 ----
 
