@@ -182,6 +182,6 @@ outputs and can be opened in Excel. Some statistics need to be calculated manual
 
 ---- 
 
-### This is what your analysis parent directory structure after pipeline has been run.
-
+### This is what your parent directory structure should look like after pipeline has been run.
+![Directory_Screenshot](https://github.com/mnievesc/Ancient_mtDNA_Pipeline/blob/master/Screenshot_ParentDirectory.png)
 
