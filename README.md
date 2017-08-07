@@ -33,11 +33,10 @@ fastq files (see section 1). Tab delimited stats files are created and stored in
 
 ### Important: 
 Reference needs to be specified at top of script, same for path to contamMix and Qualimap unless these are stored in PATH. 
-In my case the reference is always rCRS.fasta (gi|251831106|ref|NC_012920.1| Homo sapiens mitochondrion, complete genome). 
+In my case the reference is always rCRS.fasta *(gi|251831106|ref|NC_012920.1| Homo sapiens mitochondrion, complete genome)*. 
 Pipeline assumes reference has been previously indexed using `samtools faidx`
 
-In addition to the above listed programs there are also two helper scripts that need to be used with this pipeline: `pmd_hist_v3.R`, `plotPMD.R`
-and one reference file of contaminants which is necessary for contamMix: `mt311.fa`. This file comes with the software.
+In addition to the above listed programs there are also two helper scripts that need to be used with this pipeline: `pmd_hist_v3.R`, `plotPMD.R` and one reference file of contaminants which is necessary for contamMix: `mt311.fa`. This file can be obtained with the MIA program (see below).
 
 ----
 
@@ -164,13 +163,13 @@ the remapped.bam, the mafft alignmnet between sample and contaminants, and the s
 
 
 ### 9. Generate postmortem damage profiles with PMDtools
-Step 9 uses the python program pmdtools to evaluate postmortem damage (PMD) for all samples at two different thresholds (0 and 3). 
+Step 9 uses the python program pmdtools, developed by Pontus Skoglund, to evaluate postmortem damage (PMD) for all samples at two different thresholds (0 and 3). 
 The more PMD a sample has the more ancient it likely is although this can vary depending on the amount of reads (i.e. the less reads the less useful the analysis is).
 Here I use the *uniq.bam file as the *rescaled.bam file cannot be modified for the MD tag. So I use samtools to add an MD tag and then 
 produce a distribution of PMD scores. I use Rscript `pmd_hist_v3.R` to produce a histogram based on these scores. I then run pmdtools at thresholds 0 and 3. 
 This produces a new bam file with only those reads that have reads that pass the given thresholds. Append information on reads excluded, passed and % data passed by threshold to the output from R. 
 Lastly I use the provided Rscript `plotPMD.R` to generate deamination plots at each threshold: no threshold, PMD = 0, PMD = 3. 
-For more on pmdtools see: https://code.google.com/archive/p/pmdtools/ **Multiple outputs at this stage include histogram.pdf file, deamination plot pdfs, 
+For more on pmdtools and to obtain the program go to: https://code.google.com/archive/p/pmdtools/ **Multiple outputs at this stage include histogram.pdf file, deamination plot pdfs, 
 bamfiles at each threshold and stats.txt file. All store in: `pmdanalysis.Sample`**. In this step I also use a check to make sure to only run this analysis on
 samples with >0 mapped, unique reads.
 
