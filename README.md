@@ -180,3 +180,8 @@ samples with >0 mapped, unique reads.
 All the tab delimited files produced at each step are concatenated using paste. The final file called **MT.DataAnalysis.Summary.txt** provides summary of analyses
 outputs and can be opened in Excel. Some statistics need to be calculated manually or in Excel such as % endogenous. These are noted in the file.
 
+---- 
+
+### This is what your analysis parent directory structure after pipeline has been run.
+
+
