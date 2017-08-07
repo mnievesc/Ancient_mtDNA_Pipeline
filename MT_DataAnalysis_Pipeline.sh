@@ -10,7 +10,7 @@
 # following format: Sample1_R1_001.fastq.gz Sample1_R2_001.fastq.gz. Output file is one large text delimited file which can be opened and edited
 # in excel. 
 
- Necessary dependencies
+# Necessary dependencies
 qmap=~/install/qualimap_v2.2/qualimap
 ref=~/Maria/ref_seqs/rCRS.fasta 
 contaMix=/home/user/install/contamMix/exec/estimate.R
