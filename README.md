@@ -36,7 +36,7 @@ Reference needs to be specified at top of script, same for path to contamMix and
 In my case the reference is always rCRS.fasta *(gi|251831106|ref|NC_012920.1| Homo sapiens mitochondrion, complete genome)*. 
 Pipeline assumes reference has been previously indexed using `samtools faidx`
 
-In addition to the above listed programs there are also two helper scripts that need to be used with this pipeline: `pmd_hist_v3.R`, `plotPMD.R` and one reference file of contaminants which is necessary for contamMix: `mt311.fa`. This file can be obtained with the MIA program (see below).
+In addition to the above listed programs there are also two helper scripts that need to be used with this pipeline: `pmd_hist_v3.R` (provided here), `plotPMD.R` (available at pmdtools website) and one reference file of contaminants which is necessary for contamMix: `mt311.fa`. This file can be obtained with the MIA program (see below).
 
 ----
 
