@@ -16,6 +16,11 @@ ref=~/Maria/ref_seqs/rCRS.fasta
 contaMix=/home/user/install/contamMix/exec/estimate.R
 mt311=~/Maria/ref_seqs/mt311.fa
 
+# Directory where auxiliary scripts are stored
+pmdscripts=~/Maria/Analysis_scripts/
+
+# NOTE: Must change path of reference in step 5. Set to path on my computer.
+
 echo " "
 echo "****************************************************"
 echo " ***   Welcome to the Ancient mtDNA Pipeline!     ***"
@@ -342,9 +347,9 @@ echo "****  Run PMD tools ******"
 mkdir 9_PMDtools
 cd 9_PMDtools
 
-cp ~/Maria/Analysis_scripts/pmdtools.py .
-cp ~/Maria/Analysis_scripts/pmd_hist_v3.R .  # copy auxiliary scripts
-cp ~/Maria/Analysis_scripts/plotPMD.R .
+cp $pmdscripts/pmdtools.py .
+cp $pmdscripts/pmd_hist_v3.R .  # copy auxiliary scripts
+cp $pmdscripts/plotPMD.R .
 cp ../4_MappingFiltering/*.uniq.bam .  # Cannot used rescaled.bam for PMDtools
 
 for a in *.uniq.bam;
