@@ -24,7 +24,7 @@ module load schmutzi/2017-10-13
 ## Set working directory
 WD=/home/mnievesc/PRaDNA_MT_forschmutzi/
 
-## Run script in directory containing all uniq.bamfiles. Must not run on rescaled files because
+## Run script in directory containing all uniq.bamfiles.
 ## Use for loop to run on all bamfiles at once.
 cd $WD
 for a in uniq.bam/*uniq.bam;
