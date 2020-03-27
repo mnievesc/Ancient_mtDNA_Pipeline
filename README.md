@@ -12,7 +12,9 @@ calls variants, estimates contamination and damage. It is designed to work with 
 Below an explanation of conditions used in each step and other important notes. Pipeline is designed to run within one parent directory already containing raw
 fastq files (see section 1). Tab delimited stats files are created and stored in each sub-directory as well as in the parent directory.
 
-Update 9/30/2018: Added script `schmutzi_mtcont_saguaro.sh` to run schmutzi contamination estimation for mitochondrial reads. This is not implemented in pipeline yet but can be run separately. Schmutzi is availabe on GitHub: https://github.com/grenaud/schmutzi.
+**Update 9/30/2018:** Added script `schmutzi_mtcont_saguaro.sh` to run schmutzi contamination estimation for mitochondrial reads. This is not implemented in pipeline yet but can be run separately. Schmutzi is availabe on GitHub: https://github.com/grenaud/schmutzi.
+
+**Update 3/27/2020:** Added notes for adapting pipeline to run on macOS. These notes were complied by Tre Blohm (tre.blohm@umconnect.umt.edu) PhD candidate at University of Montana between 2019 and 2020.
 
 -----
 
