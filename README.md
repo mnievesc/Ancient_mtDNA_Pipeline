@@ -1,7 +1,7 @@
 **********************************************************************************************************************************
 # Analysis Pipeline for ancient mtDNA Capture Data
 ### Written by M. Nieves Colon - 9/20/2016 - mnievesc@asu.edu / maria.nieves@cinvestav.mx
-### Updated 9/30/2018
+### Last Update to pipeline: 9/30/2018 / Last Update to README: 3/27/2020
 ### Usage: ./MT_DataAnalysis_Pipeline.sh
 **********************************************************************************************************************************
 
