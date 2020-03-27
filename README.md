@@ -14,7 +14,7 @@ fastq files (see section 1). Tab delimited stats files are created and stored in
 
 **Update 9/30/2018:** Added script `schmutzi_mtcont_saguaro.sh` to run schmutzi contamination estimation for mitochondrial reads. This is not implemented in pipeline yet but can be run separately. Schmutzi is availabe on GitHub: https://github.com/grenaud/schmutzi.
 
-**Update 3/27/2020:** Added notes for adapting pipeline to run on macOS. These notes were complied by Tre Blohm (tre.blohm@umconnect.umt.edu) PhD candidate at University of Montana between 2019 and 2020.
+**Update 3/27/2020:** Added PDF file `Changes_updates to Maria's pipeline.pdf` with notes on adapting pipeline to run on macOS. These notes were provided by pipeline user Tre Blohm (tre.blohm@umconnect.umt.edu).
 
 -----
 
